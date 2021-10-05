@@ -1,0 +1,48 @@
+.tab{
+    display: flex;
+    width: 32rem;
+    height: 400px;
+    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
+    border-radius: 5px;
+}
+
+.list{
+    display: flex;
+    color: black;
+}
+
+.ul{
+    list-style: none;
+}
+
+.tab1{
+    width:100px;
+    padding: 25px;
+    background-color: #2e2c2c;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+
+.tab2{
+    width:100px;
+    padding: 25px;
+    background-color: #2e2c2c;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+.tab3{
+    width:100px;
+    padding: 25px;
+    background-color: #2e2c2c;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.rd{
+    display: none;
+}

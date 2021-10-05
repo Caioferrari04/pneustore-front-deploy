@@ -1,0 +1,198 @@
+.Header{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+    padding: 1rem;
+    align-content: center;
+    background-color: rgb(31, 29, 29);
+}
+
+.sac{
+    width: 100vw;
+    margin: 0;
+    padding: 0.3rem;
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+    background-color: rgb(167, 14, 14);
+    list-style: none;
+
+    li{
+        margin: 0 1rem;
+    }
+}
+
+.navbar{
+    width: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .logo{
+        justify-content: center;
+
+        img {
+            width: 12rem;
+        }
+
+        :hover{
+            cursor: pointer;
+        }
+    }
+    //--------------------------
+
+    .user{
+        height: fit-content;
+        justify-self: flex-end;
+        display: flex;
+
+    .login{
+        
+        //justify-self: end;
+        color: rgb(231, 225, 225);
+        margin-right: 13px;
+        
+        img{
+            width: 1.8rem;
+            margin-left: 1.3rem;
+        }
+    }
+
+    .cart{
+        display: flex;
+        
+    
+        .icon{
+            width: 1.8rem;
+        }
+
+        p{
+            width: fit-content;
+            font-size: 13px;
+            position: relative;
+            bottom: 10px;
+            right: 1.1rem;
+            // border-style: solid;
+            // border-width: 3px;
+
+        }
+     }
+    }
+    //-----------------------------
+}
+.search{
+        margin-top: 1rem;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+
+        input{
+            width: 70vw;
+            border-style: none;
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+        }
+        input:focus{
+            outline: none;
+        }
+
+        .searchIcon{
+            background-color: rgb(54, 53, 53);
+            padding: 0.3rem;
+            border-left-style: none;
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+
+            img{
+                width: 1.5rem;
+            }
+
+            :hover{
+                cursor: pointer;
+            }
+        }
+
+}
+
+//_____________________TABLETS E TELAS MAIORES______________________________
+
+@media screen and (min-width: 600px){
+
+    .navbar{
+        display: flex;
+        .logo{
+            margin: auto; 
+        }
+
+        .user{
+            align-self: flex-end;
+            justify-self: flex-start;
+            max-width: fit-content;
+            
+        }
+    }
+}
+
+//_____________________NAVEGADORES______________________________
+
+@media screen and (min-width: 1154px){
+
+    .Header{
+        padding: 2rem;
+    }
+
+    .navbar{
+        display: grid;
+        grid-template-columns: 20% 50% 10%;
+        justify-content: space-around;
+        align-items: center;
+
+        .logo{
+
+            img{
+                width: 15rem;
+            }
+        }
+
+        .user{
+            grid-column-start: 3;
+            justify-self: end;
+            align-items: center;
+
+            .login{
+                img{
+                    width: 2rem;
+                }
+            }
+
+            .cart{
+                .icon{
+                    width: 2rem;
+                    
+                }
+
+                p{
+                    font-size: 14px;
+                    position: relative;
+                    bottom: 14px;
+                    right: 1.5rem;
+                }
+            }
+            
+        }
+
+        .search{
+            align-self: center;
+            grid-column-start: 2;
+            margin-top: -3rem;
+
+            input{
+                height: 6vh;
+            }
+
+            
+        }
+    }
+}
