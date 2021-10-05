@@ -2,6 +2,9 @@
 import styles from './Tabs.module.scss';
 
 export default function Tabs(){
+
+
+
   return(
     <div className={styles.tab}>
       <ul className={styles.ul}>
@@ -32,5 +35,8 @@ export default function Tabs(){
         </li>
       </ul>
     </div>
+
+    
   )
 }
+
