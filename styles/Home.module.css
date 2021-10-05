@@ -1,16 +1,11 @@
 .container {
-  min-height: 100vh;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  align-content: center;
-  background-color: rgb(240, 236, 236);
+  align-items: center;
+  background-color: rgb(252, 252, 252);
 }
 
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
+
