@@ -2,7 +2,7 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    
+    width: 100vw;
     padding: 1rem;
     align-content: center;
     background-color: rgb(31, 29, 29);
@@ -56,7 +56,7 @@
 
         p{
             display: flex;
-            width: 1.6rem;
+            width: 1.4rem;
             font-size: 13px;
             position: relative;
             padding: 0.3rem;
