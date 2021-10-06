@@ -1,6 +1,6 @@
 .card{
     display: flex;
-    width: 30rem;
+    width: fit-content;
     margin-top: 20px;
     font-size: 15px;
     align-items: center;
@@ -13,7 +13,7 @@
     width: fit-content;
     
     img{
-        width: 13rem;
+        width: 8rem;
     }
 }
 
@@ -28,7 +28,7 @@
     }
 
     h3{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     img{

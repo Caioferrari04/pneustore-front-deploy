@@ -30,13 +30,14 @@ export default function Home() {
     // console.log(data)
 
   return (
+    <>
+    <Header></Header>
     <div className={styles.container}>
       <Head>
         <title>Seu Carrinho | PneuStore</title>
         <meta name="description" content="PneuStore -O pneu ideal para o seu Veículo e moto" />
         <link rel="icon" href="/favicon.ico" />  
       </Head>
-      <Header></Header>
       <Card {...data.results}/>
       <Tabs>
       <div label="Montagem Móvel">
@@ -59,7 +60,7 @@ export default function Home() {
           </div>
       </Tabs>
     </div>
-    
+  </>
   )
 }
 
