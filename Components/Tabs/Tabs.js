@@ -1,42 +1,34 @@
-
+import { useState } from "react";
 import styles from './Tabs.module.scss';
 
-export default function Tabs(){
+const Tabs = ({ children }) => {
 
+  const [activeTab, setActiveTab] = useState(children[0].props.label);
+  const handleClick = (e, newActiveTab) => {
+    e.preventDefault();
+    setActiveTab(newActiveTab);
+  }
+    return (
+        <div className={styles.entrega}>
+            <ul className={styles.tabs}>
+            {children.map((tab)=>(
+                <li className={tab.props.label == activeTab ? styles.current :""} 
+                key={tab.props.label}> 
+                
+                <a className={styles.link} href="#" onClick={(e) => handleClick(e, tab.props.label)}>{tab.props.label}</a>
+                
+                </li>
+            ))} 
+            </ul>
+               {children.map((one) =>{
+                 if (one.props.label == activeTab)
+                   return( <div key={one.props.label} className={styles.content}>
+                    {one.props.children}</div>
+                );
+            })}
+        </div>
+    );
 
+};
 
-  return(
-    <div className={styles.tab}>
-      <ul className={styles.ul}>
-        <li className={styles.list}>
-          <input type="radio" className={styles.rd} checked ></input>
-          <label className={styles.tab1} >Montagem Móvel</label>
-          <div className={styles.content}> 
-          
-          </div>
-        </li>
-      </ul>
-      <ul className={styles.ul}>
-        <li className={styles.list}>
-          <input type="radio" className={styles.rd}></input>
-          <label className={styles.tab1} >Montagem parceiro</label>
-          <div className={styles.content}> 
-          
-          </div>
-        </li>
-      </ul>
-      <ul className={styles.ul}>
-        <li className={styles.list}>
-          <input type="radio" className={styles.rd}></input>
-          <label className={styles.tab1} >Entregar Endereço</label>
-          <div className={styles.content}> 
-          
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    
-  )
-}
-
+export default Tabs; 
