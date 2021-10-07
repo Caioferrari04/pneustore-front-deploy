@@ -1,15 +1,18 @@
 .entrega{
     padding-top: 10px;
-    max-width: 100vw;
+    padding-left: 10px;
+    border-radius: 5px;
+    height: 400px;
+    width: 30rem;
 }
 
 
 .tabs{
     list-style: none;
-    padding: 0;
-    margin: 0;
+    // padding: 0;
+    // margin: 0;
     display: flex;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #2e2c2c;
     
 }
 .link{
@@ -19,7 +22,7 @@
 
 .tabs > li{
     padding: 0.5em 1em;
-    margin: 0 1em;;
+    // margin: 0 1em;
 }
 
 
@@ -27,10 +30,21 @@
     background-color: white;
     color: black;
     font-weight: bold;
-    border: 2px solid gray;
+    border: 2px solid#2e2c2c;
     border-bottom: 0;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     position: relative;
+    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
 }
+
+.content{
+    border-bottom:2px solid #2e2c2c;
+    border-left: 2px solid #2e2c2c;
+    border-right:2px solid #2e2c2c;
+    padding: 6px;
+    border-top:2px solid #2e2c2c;
+    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
+}
+
 
