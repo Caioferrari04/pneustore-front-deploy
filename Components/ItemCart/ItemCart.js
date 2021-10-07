@@ -1,4 +1,4 @@
-import styles from './itemCart.module.scss';
+import styles from './ItemCart.module.scss';
 
 
 export default function ItemCart(){
