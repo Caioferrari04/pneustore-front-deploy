@@ -1,6 +1,6 @@
 .card{
     display: flex;
-    width: 100vw;
+    width: 25rem;
     height: fit-content;
     margin-top: 20px;
     margin-left: 0.5rem;
@@ -21,7 +21,7 @@
 
     input{
         width: 12rem;
-        height: 2rem;
+        height: 2.3rem;
         margin-right: 0.5rem;
         border-radius: 0.2rem;
         
@@ -32,7 +32,7 @@
         padding: 0.5rem;
         color: rgb(255, 255, 255);
         background-color: rgb(85, 147, 241);
-        font-size: 1.2em;
+        font-size: 1.5em;
         border-radius: 0.4rem;
         border-style: none;
         
