@@ -42,10 +42,8 @@ export default function Home() {
       <Head>
         <title>Seu Carrinho | PneuStore</title>
         <meta name="description" content="PneuStore -O pneu ideal para o seu Veículo e moto" />
-        <link rel="icon" href="/favicon.ico" />  
-        
+        <link rel="icon" href="/favicon.ico" />   
       </Head>
-      <button>Localizar</button>
       
       <Card {...data.results}/>
       <Frete/>
