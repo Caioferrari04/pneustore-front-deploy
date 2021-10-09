@@ -8,6 +8,7 @@ import Tabs from '../Components/Tabs/Tabs';
 
 
 
+
 export default function Home() {
 
   const [data,setData] = useState([]);
@@ -29,6 +30,8 @@ export default function Home() {
     },[]) 
     // console.log(data)
 
+    
+
   return (
     <>
     <Header></Header>
@@ -37,7 +40,10 @@ export default function Home() {
         <title>Seu Carrinho | PneuStore</title>
         <meta name="description" content="PneuStore -O pneu ideal para o seu Veículo e moto" />
         <link rel="icon" href="/favicon.ico" />  
+        
       </Head>
+      <button>Localizar</button>
+      
       <Card {...data.results}/>
       <Tabs>
       <div label="Montagem Móvel">

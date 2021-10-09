@@ -12,5 +12,16 @@ export const Api = {
             method: 'GET',
             
         })
+    },
+
+    buildApiPostRequest: (url ,body) =>{
+        return fetch(url, {
+            method: 'POST',
+            headers: new Headers({
+                Authorization : Api.authorization,
+                'Content-Type': 'application/json'
+            }),
+            body: JSON.stringify(body)
+        })
     }
 }
