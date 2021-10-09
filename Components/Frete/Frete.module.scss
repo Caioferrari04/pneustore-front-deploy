@@ -1,6 +1,6 @@
 .card{
     display: flex;
-    width: 30rem;
+    width: 90vw;
     height: fit-content;
     margin-top: 20px;
     margin-left: 0.5rem;
@@ -34,16 +34,17 @@
         background-color: rgb(85, 147, 241);
         font-size: 1.2em;
         border-radius: 0.4rem;
+        border-style: none;
         
     }
 
     h1{
-        font-size: 19px;
-        font-weight: 550;
+        font-size: 24px;
+        font-weight: 500;
     }
 
     h4{
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 500;
     }
 }
