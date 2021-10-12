@@ -3,17 +3,13 @@
   );
 html,
 body {
+  display:flex;
+  flex-direction: row;
   padding: 0;
   margin: 0;
   font-family: 'Popins', sans-serif;
   color: #eeeeee;
-  max-width: 80vw;
-  
 }
 
-body{
-  background-color: rgb(115, 221, 224);
-  
-}
 
 
