@@ -1,15 +1,12 @@
 .card{
     display: flex;
-    width: 30rem;
+    width: 90%;
     margin-top: 20px;
-    margin-left: 0.5rem;
+    padding: 0;
     font-size: 15px;
     align-items: center;
     border-radius: 5px;
-    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
-    background-color: rgb(46, 44, 44);  
-    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
-
+    background-color: rgb(32, 32, 34);
 }
 
 .info{

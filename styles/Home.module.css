@@ -1,9 +1,8 @@
   .container{
     display: flex;
     flex-direction: column;
-    min-width: 100%;
-    height: fit-content;
-    display: flex;
+    padding: 0;
+    align-items: center;
     background-color: rgb(255, 255, 255);
   }
 
