@@ -1,5 +1,6 @@
 .container{
-  width: fit-content;
+  display: flex;
+  width: 130vw;
   margin: auto;
   padding: 1rem;
   display: flex;
