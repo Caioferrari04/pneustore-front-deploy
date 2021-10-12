@@ -1,15 +1,13 @@
-.Header{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+.header{
     width: 100vw;
+    margin: 0;
     padding: 1rem;
     align-content: center;
     background-color: rgb(31, 29, 29);
 }
 
 .navbar{
-    width: 100;
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -19,7 +17,7 @@
         justify-content: center;
 
         img {
-            width: 12rem;
+            width: 14rem;
         }
 
         :hover{
@@ -64,7 +62,8 @@
             // padding-bottom: 0;
             bottom: 13px;
             right: rem;
-            background-color: rgb(230, 19, 36);
+            color: rgb(78, 74, 74);
+            background-color: rgba(255, 255, 255, 0.993);
             border-radius: 12rem;
 
         }
@@ -79,7 +78,7 @@
         flex-direction: row;
 
         input{
-            width: 80vw;
+            width: 100vw;
             border-style: none;
             border-top-left-radius: 0.5rem;
             border-bottom-left-radius: 0.5rem;
@@ -89,7 +88,7 @@
         }
 
         .searchIcon{
-            background-color: rgb(54, 53, 53);
+            background-color: rgb(56, 57, 58);
             padding: 0.3rem;
             border-left-style: none;
             border-top-right-radius: 0.5rem;
@@ -103,6 +102,17 @@
                 cursor: pointer;
             }
         }
+
+}
+
+//_____________________SMARTPHONES______________________________
+
+@media (max-width: 500px){
+    .header{
+        width: 130vw;
+    }
+
+    
 
 }
 
@@ -127,9 +137,10 @@
 
 //_____________________NAVEGADORES______________________________
 
-@media screen and (min-width: 1154px){
+@media screen and (min-width: 900px){
 
-    .Header{
+    .header{
+        width: 100vw;
         padding: 2rem;
     }
 

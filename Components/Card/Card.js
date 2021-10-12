@@ -18,9 +18,9 @@ export default function Card(props){
                   <img src={produto.imagemUrl} alt={'pneu '+produto.marca}/>
                 </div>
                 <div className={styles.info}>
-                  <h2>{produto.nome}</h2>
-                  <h3>R$ {produto.preco}</h3>
-                  <img src={produto.imagemUrlMarca} alt={'logomarca '+produto.marca}/>
+                  <h2 className={styles.nome}>{produto.nome}</h2>
+                  <h3 className={styles.preco}>R$ {produto.preco}</h3>
+                  <h4>12x sem juros</h4>
                 </div>
               </div>
             : null

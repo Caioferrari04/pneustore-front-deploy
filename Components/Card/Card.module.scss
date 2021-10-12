@@ -6,7 +6,7 @@
     align-items: center;
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
-    background-color: rgb(46, 44, 44);  
+    color: rgb(34, 32, 32);
 }
 
 .imagem{
@@ -23,12 +23,20 @@
     align-items: center;
     justify-content: center;
 
-    h2{
-        font-size: 15px;
+    .nome{
+        font-size: 18px;
     }
 
-    h3{
+    .preco{
         font-size: 20px;
+        max-width: fit-content;
+        padding: 0.5rem;
+        background-color: rgb(22, 230, 22);
+        color: rgb(255, 255, 255);
+    }
+
+    h4{
+        color:rgb(156, 153, 148)
     }
 
     img{

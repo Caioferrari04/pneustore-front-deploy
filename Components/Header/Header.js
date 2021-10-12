@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Header(){
     return(
-        <div className={styles.Header}>
+        <div className={styles.header}>
             <div className={styles.navbar}>
                 <Link href="https://www.pneustore.com.br" passHref={true}>
                     <div className={styles.logo}>
