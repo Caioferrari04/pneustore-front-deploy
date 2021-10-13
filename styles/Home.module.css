@@ -6,6 +6,26 @@
     background-color: rgb(255, 255, 255);
   }
 
+  .text {
+    color: black;
+  }
+
+  .title{
+    color:black;
+  }
+
+  .button2{
+        
+    padding: 0.2rem;
+    margin: 0.2rem;
+    color: rgb(255, 255, 255);
+    background-color: green;
+    font-size: 1em;
+    border-radius: 0.4rem;
+    border-style: none;
+    
+}
+
 
 
 
