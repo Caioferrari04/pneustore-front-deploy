@@ -1,5 +1,5 @@
 .header{
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 1rem;
     align-content: center;
@@ -108,11 +108,25 @@
 //_____________________SMARTPHONES______________________________
 
 @media (max-width: 500px){
-    .header{
-        width: 130vw;
-    }
-
     
+    .header{
+        .navbar{
+
+            .logo{
+    
+                img{
+                    width: 16rem;
+                }
+            }
+    
+        }
+
+        .search{
+            height: 2.5rem;
+        }
+
+
+    }
 
 }
 
