@@ -5,10 +5,18 @@ export default function Footer(){
         <div className={styles.footer}>
             <div className={styles.list}>
                 <ul>
-                    <li>Institucional</li>
-                    <li>Ajuda</li>
-                    <li>Serviços</li>
-                    <li>Central de relacionamentos</li>
+                    <li className={styles.claro}>
+                        Institucional
+                    </li>
+                    <li className={styles.escuro}>
+                        Ajuda
+                    </li>
+                    <li className={styles.claro}>
+                        Central de atendimentos
+                    </li>
+                    <li className={styles.escuro}>
+                        Televendas
+                    </li>
                 </ul>
             </div>
         </div>  
@@ -17,6 +25,4 @@ export default function Footer(){
 }
 
 //<h2>Institucional</h2>
-{/* <h2>Ajuda</h2>
-<h2>Serviço</h2>
-<h2>Central de relacionamento</h2> */}
+{/* */}
