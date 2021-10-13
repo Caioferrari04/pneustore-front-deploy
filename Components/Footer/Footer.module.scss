@@ -10,4 +10,14 @@
 .list{
     padding: 1rem;
     text-align: center;
+
+    ul{
+        list-style: none;
+
+        li{
+            margin: 1rem 0;
+        }
+    }
+
+
 }
