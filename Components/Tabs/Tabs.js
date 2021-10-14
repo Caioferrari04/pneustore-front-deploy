@@ -26,6 +26,7 @@ const Tabs = ({ children }) => {
                     {one.props.children}</div>
                 );
             })}
+            
         </div>
     );
 

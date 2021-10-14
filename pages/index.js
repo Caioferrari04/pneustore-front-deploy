@@ -50,18 +50,21 @@ export default function Home() {
               <p className={styles.text}>
               
               </p>
+              <button className={styles.button2}>agendar </button>
           </div>
           <div label="Montagem no parceiro">
             <h2 className={styles.title}>Entrega e montagem em um centro de montagem parceiro</h2>
               <p className={styles.text}>
                 
               </p>
+              <button className={styles.button2}>Selecionar parceiro</button>
           </div>
           <div label="Entrega no meu endereço">
             <h2 className={styles.title}>Entrega comum em sua residência</h2>
               <p className={styles.text}>
               
               </p>
+              
           </div>
       </Tabs>
       <ItemCart/>

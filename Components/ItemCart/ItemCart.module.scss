@@ -6,6 +6,10 @@
     font-size: 15px;
     align-items: center;
     border-radius: 5px;
+<<<<<<< HEAD
+=======
+    background-color: #234150;
+>>>>>>> 8d2f5f8348ef1d9a4938a44e8e38bacc5c72fb5c
     
 }
 
@@ -14,7 +18,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     color: rgb(17, 16, 16);
+=======
+    // color: 
+    colo
+>>>>>>> 8d2f5f8348ef1d9a4938a44e8e38bacc5c72fb5c
 
     h2{
         font-size: 15px;
@@ -23,5 +32,28 @@
     h3{
         font-size: 25px;
     }
+    
 
+}
+.button1{
+        
+    padding: 0.2rem;
+    margin: 0.2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(85, 147, 241);
+    font-size: 1.5em;
+    border-radius: 0.4rem;
+    border-style: none;
+    
+}
+.button2{
+        
+    padding: 0.2rem;
+    margin: 0.2rem;
+    color: rgb(255, 255, 255);
+    background-color: green;
+    font-size: 1.5em;
+    border-radius: 0.4rem;
+    border-style: none;
+    
 }
