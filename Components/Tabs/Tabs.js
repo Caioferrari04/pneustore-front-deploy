@@ -12,7 +12,7 @@ const Tabs = ({ children }) => {
         <div className={styles.entrega}>
             <ul className={styles.tabs}>
             {children.map((tab)=>(
-                <li className={tab.props.label == activeTab ? styles.current :""} 
+                <li className={tab.props.label == activeTab ? styles.current : styles.stand} 
                 key={tab.props.label}> 
                 
                 <a className={styles.link} href="#" onClick={(e) => handleClick(e, tab.props.label)}>{tab.props.label}</a>
