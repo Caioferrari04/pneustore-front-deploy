@@ -12,7 +12,7 @@ const Tabs = ({ children }) => {
         <div className={styles.entrega}>
             <ul className={styles.tabs}>
             {children.map((tab)=>(
-                <li className={tab.props.label == activeTab ? styles.current : styles.stand} 
+                <li className={tab.props.label == activeTab ? styles.current : (styles.stand)} 
                 key={tab.props.label}> 
                 
                 <a className={styles.link} href="#" onClick={(e) => handleClick(e, tab.props.label)}>{tab.props.label}</a>
@@ -20,12 +20,16 @@ const Tabs = ({ children }) => {
                 </li>
             ))} 
             </ul>
-               {children.map((one) =>{
-                 if (one.props.label == activeTab)
-                   return( <div key={one.props.label} className={styles.content}>
-                    {one.props.children}</div>
-                );
-            })}
+                {children.map((one) =>{
+                  if (one.props.label == activeTab)
+                    return( 
+                      <div key={one.props.label} className={styles.content}>
+                        {one.props.children}
+                      </div>
+                    );
+                  }
+                  )
+                }
             
         </div>
     );

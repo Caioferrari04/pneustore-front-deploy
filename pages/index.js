@@ -53,7 +53,7 @@ export default function Home() {
           <Button className={styles.botaoAgendar}variant="outlined">AGENDAR</Button>
       </div>
 
-      <div label="Montagem no parceiro">
+      <div label="Montagem no parceiro" >
         <h2 className={styles.title}>Centro de montagem parceiro</h2>
         <p className={styles.text}></p>
         <button className={styles.button2}>Selecionar parceiro</button>
