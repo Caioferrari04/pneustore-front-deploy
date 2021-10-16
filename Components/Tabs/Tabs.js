@@ -10,7 +10,7 @@ const Tabs = ({ children }) => {
   }
     return (
         <div className={styles.entrega}>
-            <ul className={styles.tabs}>
+          <ul className={styles.tabs}>
             {children.map((tab)=>(
                 <li className={tab.props.label == activeTab ? styles.current : (styles.stand)} 
                 key={tab.props.label}> 
@@ -19,7 +19,7 @@ const Tabs = ({ children }) => {
                 
                 </li>
             ))} 
-            </ul>
+          </ul>
                 {children.map((one) =>{
                   if (one.props.label == activeTab)
                     return( 
