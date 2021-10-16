@@ -1,18 +1,16 @@
 .entrega{
     position: relative;
-    left: -1rem;
+    left: -1.4rem;
     display: flex;
     align-content: center;
     justify-content: center;
     flex-direction: column;
     height: fit-content;
     //background-color: cadetblue;
-    padding: 0;
 }
 
 .tabs{
     display: flex; 
-    margin-left: -1rem;
 }
 
 .link{
@@ -50,8 +48,7 @@
 
 .content{
     position: relative;
-    left: -1rem;
-    width: 85.5%;
+    width: 83%;
     top: -1.0rem;
     padding: 1rem;
     margin-left: 2.7rem;
