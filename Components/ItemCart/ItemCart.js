@@ -12,8 +12,10 @@ export default function ItemCart(){
           </div>
           <h3> Pneu Firestone 15 ExtremeContact DW 225/70R16 </h3>
           <h3> Subtotal: R$548,43 </h3>
-          <button className={styles.button1}>Continuar comprando</button>
-          <button className={styles.button2}>finalizar compra</button>
+          <div className={styles.buttons}>
+            <button className={styles.button1}>Continuar comprando</button>
+            <button className={styles.button2}>Finalizar compra</button>
+          </div>
         </div>
       </div>      
   )

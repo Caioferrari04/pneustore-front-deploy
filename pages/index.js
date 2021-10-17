@@ -48,7 +48,7 @@ export default function Home() {
       <Frete/>
       <Tabs>
       <div label="Montagem Móvel">
-      <div className="">
+        <div className="">
           <h2 className={styles.title}>Agende sua entrega com a PneuStore Móvel</h2>
         </div>
         <div className={estilos.infoEntrega}>
