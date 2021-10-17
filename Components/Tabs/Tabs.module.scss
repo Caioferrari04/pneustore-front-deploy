@@ -1,3 +1,4 @@
+
 .entrega{
     position: relative;
     left: -1.4rem;
@@ -6,11 +7,13 @@
     justify-content: center;
     flex-direction: column;
     height: fit-content;
-    //background-color: cadetblue;
+    
 }
 
 .tabs{
+    width: 95%;
     display: flex; 
+
 }
 
 .link{
@@ -24,11 +27,6 @@
     margin: 0 0.2rem;
     padding: 0.5em 1em;
     list-style: none;
-
-}
-
-.Mo{
-    border-radius: 4rem;
 }
 
 .stand{
@@ -52,7 +50,7 @@
 
 .content{
     position: relative;
-    width: 83%;
+    width: 86%;
     top: -1.0rem;
     padding: 1rem;
     margin-left: 2.7rem;
