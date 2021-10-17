@@ -8,10 +8,10 @@
     "start": "next start -p $PORT"
   },
   "engines": {
-    "node": "16.5.0"
+    "node": "14.17.5"
   },
   "dependencies": {
-    "@emotion/react": "^14.17.5",
+    "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@mui/material": "^5.0.1",
     "date": "^1.0.2",
