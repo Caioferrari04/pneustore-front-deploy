@@ -8,7 +8,7 @@ export default function ItemCart(){
         <div className={styles.info}>
           <div className={styles.cabecalho}>
             <h2>Resumo do pedido</h2>
-            <img src='bag.png' />
+            <img src='bag.png' alt="Ícone sacola de compras" />
           </div>
           <h3> Pneu Firestone 15 ExtremeContact DW 225/70R16 </h3>
           <h3> Subtotal: R$548,43 </h3>

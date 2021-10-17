@@ -65,15 +65,34 @@ export default function Home() {
             <p className={styles.text}>3. Pronto! Nós entregamos e montamos o pneu sem vocẽ sair de casa.</p>
           </div>
         </div>
-      
-          <Calendar/>
-          <Button className={styles.botaoAgendar}variant="outlined">AGENDAR</Button>
+        <Calendar/>
+        <Button className={styles.botaoAgendar}variant="outlined">AGENDAR</Button>
+
       </div>
 
       <div label="Montagem no parceiro" >
-        <h2 className={styles.title}>Centro de montagem parceiro</h2>
-        <p className={styles.text}></p>
-        <button className={styles.button2}>Selecionar parceiro</button>
+        <div className="">
+          <h2 className={styles.title}>Centro de montagem parceiro</h2>
+          <p></p>
+        </div>
+        <div className={estilos.infoEntrega}>
+          <div className={estilos.info}>
+              <img src="tires.png" alt="Ícone pneu"/>
+              <p className={styles.text}>1. Você escolhe o pneu.</p>
+          </div>
+          <div className={estilos.info}>
+              <img src="locationParc.png" alt="Ícone pneu"/>
+              <p className={styles.text}>2. Escolha o parceiro mais próximo.</p>
+          </div>
+          <div className={estilos.info}>
+              <img src="leveCar.png" alt="Ícone pneu"/>
+              <p className={styles.text}>3. Leve seu carro até o endereço escolhido. Pronto! Deixe o resto
+              com nosso parceiro.</p>
+          </div>
+        </div>
+        <div className={estilos.botoes}>
+          <button className={estilos.btnParceiro}>Selecionar parceiro</button>
+        </div>
       </div>
 
       <div label="Entrega no meu endereço">

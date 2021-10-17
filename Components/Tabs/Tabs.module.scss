@@ -83,4 +83,17 @@
     }
   }
 
+  .botoes{
+      margin-top: 1rem;
 
+    .btnParceiro{
+        width: 100%;
+        padding: 0.5rem;
+        margin: 0.2rem;
+        color: rgb(255, 255, 255);
+        background-color: #6e36f1;
+        font-size: 1.5em;
+        border-radius: 0.4rem;
+        border-style: none; 
+    }
+}
