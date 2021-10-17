@@ -1,22 +1,24 @@
 .footer{
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     width: 105%;
     align-content: center;
-    background-color: #651fff;
+    background-color: #4a148c;
     margin-top: 50px;
 }
 
 .list{
-
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
     width: 100%;
+    margin: 0 auto;
 
     ul{
         list-style: none;
         text-align: center;
 
         li{
+            padding: 0.3rem;
             text-align: left;
             width: 90%;
             margin-bottom: 1rem;

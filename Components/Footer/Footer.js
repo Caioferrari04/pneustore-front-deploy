@@ -6,16 +6,22 @@ export default function Footer(){
             <div className={styles.list}>
                 <ul>
                     <li className={styles.claro}>
-                        Institucional
+                        INSTITUCIONAL
                     </li>
                     <li className={styles.escuro}>
-                        Ajuda
+                        AJUDA      
                     </li>
                     <li className={styles.claro}>
-                        Central de atendimentos
+                        SERVIÇO
                     </li>
                     <li className={styles.escuro}>
-                        Televendas
+                        CENTRAL DE RELACIONAMENTOS
+                    </li>
+                    <li className={styles.escuro}>
+                        SEGURANÇA
+                    </li>
+                    <li className={styles.escuro}>
+                        AVALIAÇÕES
                     </li>
                 </ul>
             </div>

@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </div>
         <Calendar/>
-        <Button className={styles.botaoAgendar}variant="outlined">AGENDAR</Button>
+        <Button className={estilos.btnParceiro} variant="outlined">AGENDAR</Button>
 
       </div>
 
