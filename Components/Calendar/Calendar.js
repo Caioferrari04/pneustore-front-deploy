@@ -8,6 +8,7 @@ export default function Calendar(){
     return(
         <div className={styles.calendario}>
             <DatePicker 
+            placeholderText="     dd/mm/aa"
             selected={selectedDate} 
             onChange={date => setSelectedDate(date)} 
             dateFormat='dd/MM/yyyy'
