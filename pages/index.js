@@ -34,8 +34,6 @@ export default function Home() {
     },[]) 
     // console.log(data)
 
-    
-
   return (
     <>
     
@@ -52,27 +50,22 @@ export default function Home() {
       <div label="Montagem Móvel">
         <div className="">
           <h2 className={styles.title}>Agende sua entrega com a PneuStore Móvel</h2>
-<<<<<<< HEAD
         </div>
         <div className={estilos.infoEntrega}>
           <div className={estilos.info}>
             <img src="tires.png" alt="Ícone pneu"/>
-            <p className={styles.text}>1. Você escolhe o pneu</p>
+            <p className={styles.text}>1. Você escolhe o pneu.</p>
           </div>
           <div className={estilos.info}>
             <img src="location2.png" alt="Ícone disponibilidade do serviço"/>
-            <p className={styles.text}>2. Verifica a disponibilidade do serviço</p>
+            <p className={styles.text}>2. Verifica a disponibilidade do serviço em sua região.</p>
           </div>
           <div className={estilos.info}>
             <img src="van.png" alt="Ícone van de entrega"/>
-            <p className={styles.text}>3. Pronto! Nós entregamos e montamos o pneu sem vocẽ sair de casa </p>
+            <p className={styles.text}>3. Pronto! Nós entregamos e montamos o pneu sem vocẽ sair de casa.</p>
           </div>
         </div>
-=======
-          <p className={styles.text}>É fácil: você escolhe o pneu, verifica a disponibilidade do
-          serviço, agenda e pronto! Nós entregamos e montamos o pneu sem vocẽ sair de casa </p>
-          <Calendar/>
->>>>>>> 5409407944ff878db6459d93945dc788969d4ef4
+          {/* <Calendar/> */}
           <Button className={styles.botaoAgendar}variant="outlined">AGENDAR</Button>
       </div>
 
