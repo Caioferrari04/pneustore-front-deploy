@@ -9,7 +9,9 @@ import Tabs from '../Components/Tabs/Tabs';
 import ItemCart from '../Components/ItemCart/ItemCart';
 import Footer from '../Components/Footer/Footer';
 import Frete from '../Components/Frete/Frete';
+import Calendar from '../Components/Calendar/Calendar';
 import Button from '@mui/material/Button';
+
 
 export default function Home() {
 
@@ -50,6 +52,7 @@ export default function Home() {
       <div label="Montagem Móvel">
         <div className="">
           <h2 className={styles.title}>Agende sua entrega com a PneuStore Móvel</h2>
+<<<<<<< HEAD
         </div>
         <div className={estilos.infoEntrega}>
           <div className={estilos.info}>
@@ -65,6 +68,11 @@ export default function Home() {
             <p className={styles.text}>3. Pronto! Nós entregamos e montamos o pneu sem vocẽ sair de casa </p>
           </div>
         </div>
+=======
+          <p className={styles.text}>É fácil: você escolhe o pneu, verifica a disponibilidade do
+          serviço, agenda e pronto! Nós entregamos e montamos o pneu sem vocẽ sair de casa </p>
+          <Calendar/>
+>>>>>>> 5409407944ff878db6459d93945dc788969d4ef4
           <Button className={styles.botaoAgendar}variant="outlined">AGENDAR</Button>
       </div>
 
