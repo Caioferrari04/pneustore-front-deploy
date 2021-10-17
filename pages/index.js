@@ -48,24 +48,8 @@ export default function Home() {
       <Frete/>
       <Tabs>
       <div label="Montagem Móvel">
-        <div className="">
-          <h2 className={styles.title}>Agende sua entrega com a PneuStore Móvel</h2>
-        </div>
-        <div className={estilos.infoEntrega}>
-          <div className={estilos.info}>
-            <img src="tires.png" alt="Ícone pneu"/>
-            <p className={styles.text}>1. Você escolhe o pneu.</p>
-          </div>
-          <div className={estilos.info}>
-            <img src="location2.png" alt="Ícone disponibilidade do serviço"/>
-            <p className={styles.text}>2. Verifica a disponibilidade do serviço em sua região.</p>
-          </div>
-          <div className={estilos.info}>
-            <img src="van.png" alt="Ícone van de entrega"/>
-            <p className={styles.text}>3. Pronto! Nós entregamos e montamos o pneu sem vocẽ sair de casa.</p>
-          </div>
-        </div>
-          {/* <Calendar/> */}
+      
+          <Calendar/>
           <Button className={styles.botaoAgendar}variant="outlined">AGENDAR</Button>
       </div>
 
