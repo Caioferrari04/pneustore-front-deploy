@@ -60,4 +60,27 @@
     border-color: rgb(223, 218, 218);
 }
 
+.infoEntrega{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .info{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            width: 5rem;
+        }
+
+        p{
+            width: fit-content;
+            text-align: justify;
+        }
+    }
+  }
+
 
