@@ -35,17 +35,18 @@ export default function Frete() {
   function funcao(){
     var cep = document.createElement("h2");
     cep.style.color = "black";
-
+    //cep.style.fontSize= "40px";
     cep.style.fontWeight = "400";
     cep.innerHTML= "Estrada- São Paulo-Jundiaí /num 105,	Bairro: Perus, UF: São Paulo/SP";
     
     var title = document.createElement("h1");
-    title.style.fontSize ="22rem";
     title.style.fontWeight = "400";
     title.innerHTML = "Endereço";
     
-    
-    document.getElementById("retorno").innerHTML= title.innerHTML + ": " + cep.innerHTML;
+    document.getElementById("h4").innerHTML= "";
+    document.getElementById("retorno").appendChild(title)
+    document.getElementById("retorno").appendChild(cep)
+
     console.log(title)
   }
 
@@ -55,10 +56,10 @@ export default function Frete() {
           <h1>Informe o seu CEP <img src="location.png" alt ="localização"/></h1>
           <form onSubmit={submitHandler} >
             <input type= "text" onChange= { (e) => setDados(e.target.value)} placeholder=" ex: 54270-800" required></input>
-            <input type= "submit" onSubmit={submitHandler} value= "Calcular Entrega" />
+            <button onSubmit={submitHandler}> Calcular Entrega </button>
           </form>
           <div id="retorno">
-            <h4>Não sei meu CEP</h4>
+            <h4 id="h4">Não sei meu CEP</h4>
           </div>
         </div>
       </div>  
