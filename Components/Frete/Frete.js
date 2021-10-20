@@ -19,7 +19,8 @@ export default function Frete() {
     var title = document.createElement("h1");
     var txtT = document.createTextNode("Endereço:");
     title.style.fontWeight = "350";
-    title.style.fontSize = "24px"
+    title.style.fontSize = "24px";
+    title.style.padding = "1rem";
 
     title.appendChild(txtT);
 
