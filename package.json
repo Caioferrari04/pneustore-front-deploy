@@ -14,13 +14,17 @@
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@mui/material": "^5.0.1",
+    "argument-validator": "^0.1.0",
     "date": "^1.0.2",
+    "frete": "^0.3.2",
     "next": "11.1.2",
     "picker": "^0.1.4",
     "react": "17.0.2",
     "react-datepicker": "^4.2.1",
     "react-dom": "17.0.2",
-    "sass": "^1.42.1"
+    "sass": "^1.42.1",
+    "soap": "^0.42.0",
+    "strip-ansi": "^6.0.0"
   },
   "devDependencies": {
     "eslint": "7.32.0",
