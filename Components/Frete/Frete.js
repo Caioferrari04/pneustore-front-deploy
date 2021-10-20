@@ -20,7 +20,6 @@ export default function Frete() {
     var txtT = document.createTextNode("Endereço:");
     title.style.fontWeight = "350";
     title.style.fontSize = "24px";
-    title.style.padding = "1rem";
 
     title.appendChild(txtT);
 
@@ -29,14 +28,12 @@ export default function Frete() {
     cep.appendChild(txtI);
     cep.style.color = "black";
     cep.style.fontWeight = "400";
-
-    
-        
+    cep.style.padding = "1rem";
+ 
     document.getElementById("h4").innerHTML= "";
     document.getElementById("retorno").appendChild(title)
     document.getElementById("retorno").appendChild(cep)
 
-    console.log(title)
   }
 
   return(
