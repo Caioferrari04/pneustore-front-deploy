@@ -55,9 +55,11 @@ export default function Frete() {
           <h1>Informe o seu CEP <img src="location.png" alt ="localização"/></h1>
           <form onSubmit={submitHandler} >
             <input type= "text" onChange= { (e) => setDados(e.target.value)} placeholder=" ex: 54270-800" required></input>
-            <button onClick={submitHandler}> Calcular Entrega </button>
+            <button onSubmit={submitHandler}> Calcular Entrega </button>
           </form>
-          <h4 id="retorno">Não sei meu CEP</h4>
+          <div id="retorno">
+            <h4>Não sei meu CEP</h4>
+          </div>
         </div>
       </div>  
   )
