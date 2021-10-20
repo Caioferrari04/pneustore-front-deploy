@@ -32,7 +32,6 @@ export default function Home() {
         fetchAPi();
 
     },[]) 
-    // console.log(data)
 
   return (
     <>
