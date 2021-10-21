@@ -1,20 +1,19 @@
 .card{
     display: flex;
-    width: 100%;
+    width: 90%;
     height: fit-content;
     margin-top: 20px;
     font-size: 15px;
-    justify-content: center;
     align-items: center;
+    border-radius: 5px;
     color: black;
 }
 
 .info{
+    margin-left: 0.5rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // border-left-style: solid;
-    // border-color: rgba(89, 20, 153, 0.644);
 
     img{
         width: 1.6rem;

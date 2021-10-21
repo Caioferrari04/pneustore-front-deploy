@@ -17,22 +17,14 @@ export default function Frete() {
 
   function funcao(){
 
-    var title = document.createElement("h1");
-    var txtT = document.createTextNode("Endereço:");
-    title.style.fontWeight = "350";
-    title.style.fontSize = "24px";
-
-    title.appendChild(txtT);
-
-    var cep = document.createElement("h3");
+    var cep = document.createElement("h2");
     var txtI = document.createTextNode("Estrada- São Paulo-Jundiaí /num 105,	Bairro: Perus, UF: São Paulo/SP")
     cep.appendChild(txtI);
     cep.style.color = "black";
-    cep.style.fontWeight = "400";
+    cep.style.fontWeight = "300";
     cep.style.marginRight = "2rem";
  
     document.getElementById("h4").innerHTML= "";
-    document.getElementById("retorno").appendChild(title)
     document.getElementById("retorno").appendChild(cep)
 
     setValorFrete("100,00");
