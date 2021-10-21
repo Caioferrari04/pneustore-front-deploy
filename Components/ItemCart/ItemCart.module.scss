@@ -18,6 +18,12 @@
     justify-content: center;
     color: rgb(44, 42, 42);
 
+    h3{
+        color: rgb(68, 65, 65);
+        font-weight: 300;
+        font-size: 1.4em;
+    }
+
     .cabecalho{
         display: flex;
         padding-bottom: 0.4rem;
@@ -37,6 +43,18 @@
         img{
             width: 3.5rem;
         }
+    }
+
+    .produtoSelec{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1rem;
+    }
+
+    .valorFrete{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1rem;
     }
 
     .total{
