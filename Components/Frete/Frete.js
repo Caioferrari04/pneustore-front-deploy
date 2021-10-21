@@ -7,12 +7,13 @@ export default function Frete() {
 
   
   const [dados, setDados] = useState("");
-  const valorFrete = "100,00";
+  const [valorFrete, setValorFrete] = useState("0,00");
 
   const submitHandler = (event) => {
     event.preventDefault()
     funcao()
   }
+
 
   function funcao(){
 
@@ -28,12 +29,19 @@ export default function Frete() {
     cep.appendChild(txtI);
     cep.style.color = "black";
     cep.style.fontWeight = "400";
-    cep.style.padding = "1rem";
+    cep.style.marginRight = "2rem";
  
     document.getElementById("h4").innerHTML= "";
     document.getElementById("retorno").appendChild(title)
     document.getElementById("retorno").appendChild(cep)
 
+    setValorFrete("100,00");
+
+    return (
+      {...dados, valorFrete}
+    )
+
+      console.log(funcao.props)
   }
 
   return(
