@@ -5,24 +5,6 @@ import styles from './Frete.module.scss';
 
 export default function Frete() {
 
-  // const frete = require('frete');
-
-  // frete()
-  //     .cepOrigem('13467460')
-  //     .peso(1)
-  //     .formato(frete.formatos.caixaPacote)
-  //     .comprimento(16)
-  //     .altura(2)
-  //     .largura(11)
-  //     .diametro(1)
-  //     .maoPropria("n")
-  //     .valorDeclarado(50)
-  //     .avisoRecebimento("n")
-  //     .servico(frete.servicos.sedex)
-  //     .preco('13466321', function (err, results) {
-  //         console.log(err);
-  //         console.log(results);
-  //     });
   
   const [dados, setDados] = useState("");
   const valorFrete = "100,00";
@@ -33,21 +15,25 @@ export default function Frete() {
   }
 
   function funcao(){
-    var cep = document.createElement("h2");
-    cep.style.color = "black";
-    //cep.style.fontSize= "40px";
-    cep.style.fontWeight = "400";
-    cep.innerHTML= "Estrada- São Paulo-Jundiaí /num 105,	Bairro: Perus, UF: São Paulo/SP";
-    
+
     var title = document.createElement("h1");
-    title.style.fontWeight = "400";
-    title.innerHTML = "Endereço";
-    
+    var txtT = document.createTextNode("Endereço:");
+    title.style.fontWeight = "350";
+    title.style.fontSize = "24px";
+
+    title.appendChild(txtT);
+
+    var cep = document.createElement("h3");
+    var txtI = document.createTextNode("Estrada- São Paulo-Jundiaí /num 105,	Bairro: Perus, UF: São Paulo/SP")
+    cep.appendChild(txtI);
+    cep.style.color = "black";
+    cep.style.fontWeight = "400";
+    cep.style.padding = "1rem";
+ 
     document.getElementById("h4").innerHTML= "";
     document.getElementById("retorno").appendChild(title)
     document.getElementById("retorno").appendChild(cep)
 
-    console.log(title)
   }
 
   return(
