@@ -2,6 +2,8 @@
 
 # Projeto Bootcamp PneuStore - Front-End Next.js SPA
 
+
+
 Single Page Aplication (SPA) em Next.Js desenvolvida como proposta de melhoria para a página de compra da <a href="https://www.pneustore.com.br">PneuStore</a> e também como projeto do módulo 5 (bootcamp) da <a href="https://blueedtech.com.br">Blue EdTech</a>. Acessível atualmente no Netlify para acesso público no seguinte link: https://elated-easley-51cded.netlify.app 
 
 <img src="https://i.imgur.com/5xwmTKL.png"/>
@@ -37,15 +39,10 @@ Para mudar para visualização de mobile, basta apertar F12 em seu navegador e c
 ### Dependências
 
 <a href="">Node.js v14.17.5</a> 
-
 <a href="https://pt-br.reactjs.org">React v17.0.2</a>
-
 <a href="https://sass-lang.com">Sass v1.42.1</a> 
-
-<a href="https://nextjs.org">Next.js v.11.1.2</a> 
-
+<a href="https://nextjs.org">Next.js v.11.1.2</a>
 <a href="https://emotion.sh/docs/introduction">Emotion</a>
-
 <a href="https://mui.com/pt/">Material UI v5.0.2</a>
 
 ## Participantes do Projeto:
