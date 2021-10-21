@@ -52,7 +52,7 @@ export default function Home() {
       <Tabs>
       <div label="Montagem Móvel">
         <div className="">
-          <h2 className={styles.title}>Agende sua entrega com a PneuStore Móvel</h2>
+          <h2 className={styles.title}>Agende sua entrega com a PneuStore Móvel, é fácil!</h2>
         </div>
         <div className={estilos.infoEntrega}>
           <div className={estilos.info}>

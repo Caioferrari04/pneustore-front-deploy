@@ -12,7 +12,8 @@
   }
 
   .title{
-    color:black;
+      color: rgb(56, 56, 56);
+      text-align: center;
   }
 
   .botaoAgendar{
