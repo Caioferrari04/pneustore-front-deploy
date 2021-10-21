@@ -11,6 +11,7 @@ import Footer from '../Components/Footer/Footer';
 import Frete from '../Components/Frete/Frete';
 import Calendar from '../Components/Calendar/Calendar';
 import Button from '@mui/material/Button';
+import ModalOne from '../Components/Modals/ModalOne';
 
 
 export default function Home() {
@@ -31,7 +32,10 @@ export default function Home() {
 
         fetchAPi();
 
-    },[]) 
+    },[])
+    
+  const [modalOpen, setModalOpen] = useState(false);
+
 
   return (
     <>
@@ -65,7 +69,11 @@ export default function Home() {
           </div>
         </div>
         <Calendar/>
-        <Button className={estilos.btnParceiro} variant="outlined">AGENDAR</Button>
+        <Button className={estilos.btnParceiro} variant="outlined" onClick={() => {
+          setModalOpen(true);
+        }}>AGENDAR</Button>
+
+        {modalOpen && <ModalOne setOpenModal={setModalOpen} />}
 
       </div>
 
