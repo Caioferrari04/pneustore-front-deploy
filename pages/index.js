@@ -75,10 +75,7 @@ export default function Home() {
       <div label="Montagem Móvel">
         <div className="">
           <h2 className={styles.title}>Agende sua entrega com a PneuStore Móvel, é fácil!</h2>
-          <div className={styles.selecServic}>
-            <p >Selecinar serviço</p>
-            <input TYPE="RADIO" NAME="EC" VALUE="Selecionar Entrega"/>
-          </div>
+         
         </div>
         <div className={estilos.infoEntrega}>
           <div className={estilos.info}>
@@ -152,10 +149,7 @@ export default function Home() {
       <div label="Montagem no parceiro" >
         <div className="">
           <h2 className={styles.title}>Centro de montagem parceiro</h2>
-          <div className={styles.selecServic}>
-            <p>Selecinar serviço </p>
-            <input TYPE="RADIO" NAME="EC" VALUE="Selecionar Entrega"/>
-          </div>
+          
         </div>
         <div className={estilos.infoEntrega}>
           <div className={estilos.info}>
@@ -260,10 +254,7 @@ export default function Home() {
         <p className={styles.text}>
           O produto chegará no endereço entre os dias 01 e 06 de setembro.
         </p>
-        <div className={styles.selecServic}>
-            <p>Selecinar serviço </p>
-            <input TYPE="RADIO" NAME="EC" VALUE="Selecionar Entrega"/>
-        </div>
+        
       </div>
 
       </Tabs>
