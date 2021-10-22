@@ -39,12 +39,12 @@ Alguns elementos necessitam do uso de dados enviados por uma API, e caso ela est
 
 ### Dependências
 
-<a href="">Node.js v14.17.5</a> 
-<a href="https://pt-br.reactjs.org">React v17.0.2</a>
-<a href="https://sass-lang.com">Sass v1.42.1</a> 
-<a href="https://nextjs.org">Next.js v.11.1.2</a>
-<a href="https://emotion.sh/docs/introduction">Emotion</a>
-<a href="https://mui.com/pt/">Material UI v5.0.2</a>
+<a href="https://nodejs.org/en/">Node.js v14.17.5</a></br>
+<a href="https://pt-br.reactjs.org">React v17.0.2</a></br>
+<a href="https://sass-lang.com">Sass v1.42.1</a></br>
+<a href="https://nextjs.org">Next.js v.11.1.2</a></br>
+<a href="https://emotion.sh/docs/introduction">Emotion</a></br>
+<a href="https://mui.com/pt/">Material UI v5.0.2</a></br>
 
 ## Participantes do Projeto:
 
