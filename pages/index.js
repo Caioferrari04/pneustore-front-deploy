@@ -10,9 +10,23 @@ import ItemCart from '../Components/ItemCart/ItemCart';
 import Footer from '../Components/Footer/Footer';
 import Frete from '../Components/Frete/Frete';
 import Calendar from '../Components/Calendar/Calendar';
+import * as React from 'react';
 import Button from '@mui/material/Button';
-import ModalOne from '../Components/Modals/ModalOne';
+import Dialog from '@mui/material/Dialog';
+import ListItemText from '@mui/material/ListItemText';
+import ListItem from '@mui/material/ListItem';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import Slide from '@mui/material/Slide';
 
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 
 export default function Home() {
 
@@ -34,7 +48,15 @@ export default function Home() {
 
     },[])
     
-  const [modalOpen, setModalOpen] = useState(false);
+    const [open, setOpen] = React.useState(false);
+
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };  
 
 
   return (
@@ -65,15 +87,55 @@ export default function Home() {
           </div>
           <div className={estilos.info}>
             <img src="van.png" alt="Ícone van de entrega"/>
-            <p className={styles.text}>3. Pronto! Nós entregamos e montamos o pneu sem vocẽ sair de casa.</p>
+            <p className={styles.text}>3. Pronto! Nós entregamos e montamos o pneu sem você sair de casa.</p>
           </div>
         </div>
-        <Calendar/>
-        <Button className={estilos.btnParceiro} variant="outlined" onClick={() => {
-          setModalOpen(true);
-        }}>AGENDAR</Button>
-
-        {modalOpen && <ModalOne setOpenModal={setModalOpen} />}
+        
+      <div>
+      <Button variant="outlined" onClick={handleClickOpen} className={styles.botaoAgendar}>
+        agendar 
+      </Button>
+      <Dialog
+        fullScreen
+        open={open}
+        onClose={handleClose}
+        TransitionComponent={Transition}
+      >
+        <AppBar sx={{ position: 'relative' }}>
+          <Toolbar>
+            <IconButton
+              edge="start"
+              color="inherit"
+              onClick={handleClose}
+              aria-label="close"
+            >
+            </IconButton>
+            <Typography sx={{ ml: 2, flex: 1 }} variant="h5" component="div">
+              Selecione o tipo de montagem
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        <List>
+          <ListItem button onClick={handleClose}>
+            <div className={styles.combo}>
+              <h4>Combo Básico</h4>
+              <h5>Montagem + Balanceamento" </h5>
+              <h4>169,00 </h4>
+            </div>
+          </ListItem>
+          <Divider />
+          <ListItem button onClick={handleClose}>
+            <div className={styles.combo}>
+              <h4>Combo Essencial</h4>
+              <h5>Montagem + Balanceamento + 
+                Alinhamento dianteiro do veículo"
+              </h5>
+              <h4>189,00 </h4>
+              </div>
+          </ListItem>
+        </List>
+      </Dialog>
+    </div>
 
       </div>
 
