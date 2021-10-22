@@ -20,8 +20,21 @@
     width: 100%;
 }
 
+.data{
+  padding:1rem;
+  display:flex;
+  align-items: center;
+
+  input{
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
 .combo{
-  
+  display:flex;
+  justify-content: space-between;
 }
 
 

@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import { Api } from '../src/Api';
 import Header from '../Components/Header/Header';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.scss';
 import estilos from '../Components/Tabs/Tabs.module.scss';
 import Card from '../Components/Card/Card';
 import Tabs from '../Components/Tabs/Tabs';
@@ -116,24 +116,30 @@ export default function Home() {
           </Toolbar>
         </AppBar>
         <List>
-          <ListItem button onClick={handleClose}>
-            <div className={styles.combo}>
+          <div className={styles.data}>
+            <h4>Agende uma data</h4>
+            <Calendar/>
+          </div>
+          <Divider />
+          <ListItem className={styles.combo} button onClick={handleClose}>
+            <div>
               <h4>Combo Básico</h4>
-              <h5>Montagem + Balanceamento" </h5>
-              <h4>169,00 </h4>
+              <h5>Montagem + Balanceamento</h5>
             </div>
+            <h4>169,00 </h4>
           </ListItem>
           <Divider />
-          <ListItem button onClick={handleClose}>
-            <div className={styles.combo}>
+          <ListItem className={styles.combo} button onClick={handleClose}>
+            <div>
               <h4>Combo Essencial</h4>
-              <h5>Montagem + Balanceamento + 
-                Alinhamento dianteiro do veículo"
+              <h5>Montagem + Balanceamento + <br/>
+                Alinhamento dianteiro do veículo
               </h5>
-              <h4>189,00 </h4>
-              </div>
+            </div>
+            <h4>189,00 </h4>
           </ListItem>
         </List>
+
       </Dialog>
     </div>
 
