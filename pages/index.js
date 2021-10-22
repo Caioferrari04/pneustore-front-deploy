@@ -92,56 +92,56 @@ export default function Home() {
         </div>
         
       <div>
-      <Button variant="outlined" onClick={handleClickOpen} className={styles.botaoAgendar}>
-        agendar 
-      </Button>
-      <Dialog
-        fullScreen
-        open={open}
-        onClose={handleClose}
-        TransitionComponent={Transition}
-      >
-        <AppBar sx={{ position: 'relative' }}>
-          <Toolbar>
-            <IconButton
-              edge="start"
-              color="inherit"
-              onClick={handleClose}
-              aria-label="close"
-            >
-            </IconButton>
-            <Typography sx={{ ml: 2, flex: 1 }} variant="h5" component="div">
-              Selecione o tipo de montagem
-            </Typography>
-          </Toolbar>
-        </AppBar>
-        <List>
-          <div className={styles.data}>
-            <h4>Agende uma data</h4>
-            <Calendar/>
-          </div>
-          <Divider />
-          <ListItem className={styles.combo} button onClick={handleClose}>
-            <div>
-              <h4>Combo Básico</h4>
-              <h5>Montagem + Balanceamento</h5>
+        <Button variant="outlined" onClick={handleClickOpen} className={styles.botaoAgendar}>
+          agendar 
+        </Button>
+        <Dialog
+          fullScreen
+          open={open}
+          onClose={handleClose}
+          TransitionComponent={Transition}
+        >
+          <AppBar sx={{ position: 'relative' }}>
+            <Toolbar>
+              <IconButton
+                edge="start"
+                color="inherit"
+                onClick={handleClose}
+                aria-label="close"
+              >
+              </IconButton>
+              <Typography sx={{ ml: 2, flex: 1 }} variant="h5" component="div">
+                Selecione o tipo de montagem
+              </Typography>
+            </Toolbar>
+          </AppBar>
+          <List>
+            <div className={styles.data}>
+              <h4>Agende uma data</h4>
+              <Calendar/>
             </div>
-            <h4>169,00 </h4>
-          </ListItem>
-          <Divider />
-          <ListItem className={styles.combo} button onClick={handleClose}>
-            <div>
-              <h4>Combo Essencial</h4>
-              <h5>Montagem + Balanceamento + <br/>
-                Alinhamento dianteiro do veículo
-              </h5>
-            </div>
-            <h4>189,00 </h4>
-          </ListItem>
-        </List>
+            <Divider />
+            <ListItem className={styles.combo} button onClick={handleClose}>
+              <div>
+                <h4>Combo Básico</h4>
+                <h5>Montagem + Balanceamento</h5>
+              </div>
+              <h4>169,00 </h4>
+            </ListItem>
+            <Divider />
+            <ListItem className={styles.combo} button onClick={handleClose}>
+              <div>
+                <h4>Combo Essencial</h4>
+                <h5>Montagem + Balanceamento + <br/>
+                  Alinhamento dianteiro do veículo
+                </h5>
+              </div>
+              <h4>189,00 </h4>
+            </ListItem>
+          </List>
 
-      </Dialog>
-    </div>
+        </Dialog>
+      </div>
 
       </div>
 
@@ -165,8 +165,84 @@ export default function Home() {
               com nosso parceiro.</p>
           </div>
         </div>
-        <div className={estilos.botoes}>
-          <button className={estilos.btnParceiro}>Selecionar parceiro</button>
+        <div>
+          <Button className={styles.botaoAgendar} variant="outlined" onClick={handleClickOpen}>
+            Selecionar Parceiro
+          </Button>
+          <Dialog
+            fullScreen
+            open={open}
+            onClose={handleClose}
+            TransitionComponent={Transition}
+          >
+            <AppBar sx={{ position: 'relative' }}>
+              <Toolbar>
+                <IconButton
+                  edge="start"
+                  color="inherit"
+                  onClick={handleClose}
+                  aria-label="close"
+                >
+                </IconButton>
+                <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
+                  Selecione o Parceiro mais próximo
+                </Typography>
+                
+            </Toolbar>
+            </AppBar>
+            <div className={styles.infoEntrega}>
+              O produto chegará entre o dia 25 e 30 de Outubro.
+            </div>
+            <List>
+              <ListItem button onClick={handleClose} className={styles.list}>
+                <h3>Oficina 1 de Pneus</h3>
+                <div className={styles.infoParceiro}>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhjm6KPg1txwgewIOnoGeVz7JMKqyXFBE5eGy039QH3_AtP27CQ5xJZyqhTIKije2yp0&usqp=CAU" />
+                  <p>Endereço 01 Oficina de Pneus</p>
+                </div>
+              </ListItem>
+              <Divider /> 
+              <ListItem button onClick={handleClose} className={styles.list}>
+                <h3>Oficina 2 de Pneus</h3>
+                <div className={styles.infoParceiro}>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhjm6KPg1txwgewIOnoGeVz7JMKqyXFBE5eGy039QH3_AtP27CQ5xJZyqhTIKije2yp0&usqp=CAU" />
+                  <p>Endereço 02 Oficina de Pneus</p>
+                </div>
+              </ListItem>
+              <Divider />
+              <ListItem button onClick={handleClose} className={styles.list}>
+                <h3>Oficina 3 de Pneus</h3>
+                <div className={styles.infoParceiro}>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhjm6KPg1txwgewIOnoGeVz7JMKqyXFBE5eGy039QH3_AtP27CQ5xJZyqhTIKije2yp0&usqp=CAU" />
+                  <p>Endereço 03 Oficina de Pneus</p>
+                </div>
+              </ListItem>
+              <Divider />
+              <ListItem button onClick={handleClose} className={styles.list}>
+                <h3>Oficina 4 de Pneus</h3>
+                <div className={styles.infoParceiro}>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhjm6KPg1txwgewIOnoGeVz7JMKqyXFBE5eGy039QH3_AtP27CQ5xJZyqhTIKije2yp0&usqp=CAU" />
+                  <p>Endereço 04 Oficina de Pneus</p>
+                </div>
+              </ListItem>
+              <Divider />
+              <ListItem button onClick={handleClose} className={styles.list}>
+                <h3>Oficina 5 de Pneus</h3>
+                <div className={styles.infoParceiro}>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhjm6KPg1txwgewIOnoGeVz7JMKqyXFBE5eGy039QH3_AtP27CQ5xJZyqhTIKije2yp0&usqp=CAU" />
+                  <p>Endereço 05 Oficina de Pneus</p>
+                </div>
+              </ListItem>
+              <Divider />
+              <ListItem button onClick={handleClose} className={styles.list}>
+                <h3>Oficina 6 de Pneus</h3>
+                <div className={styles.infoParceiro}>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhjm6KPg1txwgewIOnoGeVz7JMKqyXFBE5eGy039QH3_AtP27CQ5xJZyqhTIKije2yp0&usqp=CAU" />
+                  <p>Endereço 06 Oficina de Pneus</p>
+                </div>
+              </ListItem>
+            </List>
+          </Dialog>
         </div>
       </div>
 
