@@ -4,7 +4,7 @@
 
 
 
-Single Page Aplication (SPA) em Next.Js desenvolvida como proposta de melhoria para a página de compra da <a href="https://www.pneustore.com.br">PneuStore</a> e também como projeto do módulo 5 (bootcamp) da <a href="https://blueedtech.com.br">Blue EdTech</a>. Acessível atualmente no Netlify para acesso público no seguinte link: https://elated-easley-51cded.netlify.app 
+Single Page Aplication (SPA) em Next.Js desenvolvida como proposta de melhoria para a página de compra da <a href="https://www.pneustore.com.br">PneuStore</a> e também como projeto do módulo 5 (bootcamp) da <a href="https://blueedtech.com.br">Blue EdTech</a>. Para acessar a API que fornece dados para a página,  <a href="https://github.com/jonathan-sarmento/pneustore-back">clique aqui</a> Acessível atualmente no Netlify para acesso público no seguinte link: https://elated-easley-51cded.netlify.app 
 
 <img src="https://i.imgur.com/5xwmTKL.png"/>
 
@@ -35,6 +35,7 @@ yarn dev
 ```
 
 Para mudar para visualização de mobile, basta apertar F12 em seu navegador e clicar no ícone de celular no canto superior direito.
+Alguns elementos necessitam do uso de dados enviados por uma API, e caso ela esteja fora do ar, é necessário realizar sua instalação também. Ela pode ser instalada e usada <a href="https://github.com/jonathan-sarmento/pneustore-back">aqui</a>.
 
 ### Dependências
 
